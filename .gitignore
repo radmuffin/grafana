@@ -48,6 +48,9 @@ __debug_bin*
 tools/phantomjs/phantomjs
 tools/phantomjs/phantomjs.exe
 profile.out
+
+# Local contribution tracking
+/contribution-opportunities
 coverage.txt
 
 docs/AWS_S3_BUCKET
