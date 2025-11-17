@@ -1,6 +1,11 @@
 # This file is used by lefthook to 'expose' the installed lefthook under
 # the name `lefthook`, as expected by the lefthook pre-commit scripts
 
+# Initialize NVM for yarn access in git hooks
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh"
+fi
+
 lefthook () {
   GOWORK=off go tool -modfile=.citools/src/lefthook/go.mod github.com/evilmartians/lefthook "$@"
 }
